@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    position: relative;
+}
+main>section{
+    width: 100%;
+    height: 100vh;
+    background: #444;
+    position: relative;
+}
+main>section:nth-child(1){
+  height: 70vh;
+}
+main>section:nth-child(2){
+    background: #989898;
+    position: relative;
+    height: 100vh;
+}
+
+header img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 5%;
+  height: 65px;
+  width: 90%;
+  background: #868686ce;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+  border-radius: 45px;
+  z-index: 100;
+}
+.list-menu{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  display: flex;
+}
+.list-menu li{
+  list-style: none;
+  padding-left: 21px;
+  margin: 20px;
+}
+.list-menu li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.cart-link{
+  font-size: 1.2rem;
+  color: #fff;
+}
+.btn{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  right: 10px;
+  top: 50%;
+}
+.btn button{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: #9b9b9e5b;
+  border-radius: 8px;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+.btn button i{
+  color: #fff;
+  font-size: 1rem;
+}
+.container { 
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding: 10px 30px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  
+}
+.product { 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    width: 350px; 
+    height: 540px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    text-align: center; 
+    position: relative;
+}
+.product img { 
+    width: 100%; 
+    height: 55%; 
+    border-radius: 6px; 
+    object-fit: cover;
+}
+.product h3 { 
+    font-size: 18px; 
+    margin: 10px 0 5px; 
+}
+.product p { 
+    font-size: 14px; 
+    color: #555;
+    text-align: left;
+}
+.price { 
+    font-weight: bold; 
+    color: green; 
+    margin-top: 8px; 
+}
+button { 
+    width: 130px;
+    height: 35px;
+    background: none;
+    color: #535353;
+    font-size: 0.9rem;
+    border: 1px solid #989898;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+button:hover { 
+    background: #0056b3;
+    color: #fff;
+}
+.cart-link { 
+    display: block; 
+    text-align: right; 
+    margin: 20px; 
+    font-weight: bold; 
+}
+
+
+
+
+

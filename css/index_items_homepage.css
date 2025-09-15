@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    position: relative;
+    background: #585656;
+    overflow-x: hidden;
+}
+main{
+    position: relative;
+    width: 100%;
+}
+main>section{
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+main>section:nth-child(3){
+    background: #585656;
+    height: 25vh;
+    position: absolute;
+}
+.header{
+    width: 100%;
+    position: relative;
+    padding: 300px 0;
+    background: #d3afaf;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    background: #6361619d;
+    transform: translate(-50%,-50%);
+    z-index: 11111;
+    left: 50%;
+    top: 3.5%;
+}
+.menu{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    padding-left: 35px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin: 5px;
+    transition: all 0.6s ease-in-out;
+}
+.menu li:nth-child(1),
+.menu li:nth-child(1) a{
+     background: #dbdddf;
+     color: #555;
+}
+
+.menu li:hover{
+    background: #dbdddf;
+}
+.menu li:hover a{
+    color: #555;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.btn{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: 3%;
+    top: 50%;  
+}
+.btn button{
+    padding: 10px 15px;
+    background: #4f4f50;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.btn button a{
+    text-align: none;
+    font-size: 1rem;
+    color: #fff;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+.Products_store{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 300px 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+}
+.productor { 
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: -26px;
+    width: 70%;
+    padding: 100px 50px;
+    margin-left: 230px;
+    position: relative;
+        
+}
+.product { 
+    background: none; 
+    width: 345px; 
+    height: 480px; 
+    border-radius: 8px;  
+    text-align: center; 
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.96);
+    border: 1px solid #ccc;
+}
+.product img { 
+    width: 100%; 
+    height: 74%; 
+    border-radius: 6px; 
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product h3 { 
+    font-size: 1.2rem; 
+    text-align: left;
+    position: relative;
+    font-family: "kh ksh sub2";
+    font-weight: normal;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 10px;
+    top: 16px;
+}
+.price { 
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #535252;
+    bottom: 22px;
+}
+.btn_add{
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+}
+.btn_add button{
+    width: 108px;
+    height: 40px;
+    border-radius: 7px;
+    background: none;
+    color: #585656;
+    border: 1px solid #585656;
+    cursor: pointer;
+}
+.btn_add button:nth-child(1){
+    width: 40px;
+}
+.btn_add button:nth-child(2){
+    background: none;
+    border: 1px solid #555;
+}
+.btn_add button:nth-child(2) a{
+    text-decoration: none;
+    color: #555;
+}
+.status{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    padding: 10px 10px;
+    background: #84cadfcb;
+    border: 1px solid #fff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+
+
+
+footer{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 58%;
+  left: 50%;
+  width: 96%;
+  height: 25vh;
+  background: none;
+}
+.left-footer{
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  display: block;
+}
+.left-footer h2{
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.left-footer p{
+  inline-size: 480px;
+  margin-top: 10px;
+  color: #fff;
+}
+.right-footer{
+  display: flex;
+  position: absolute;
+  right: -10px;
+  top: 30px;
+}
+.footer-list{
+  width: 140px;
+  height: 160px;
+  background: none;
+  position: relative;
+  margin: 2px;
+}
+.footer-list:nth-child(4){
+  width: 210px;
+}
+.footer-list h2{
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-list p{
+  line-height: 22px;
+  font-size: 0.92rem;
+  position: relative;
+  color: #fff;
+  top: 12px;
+}
+.footer-list a i{
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  top: 12px;
+}

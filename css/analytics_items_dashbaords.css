@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "KH KSH text1";
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    overflow-y: hidden;
+}
+.header-contain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+.left-menu{
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background: #f2f2f2;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ddd;
+}
+.left-menu .logo{
+    padding: 40px 50px;
+    display: block;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+.left-menu .logo i{
+    font-size: 1.6rem;
+}
+.left-menu .logo h2{
+    color: #0000ff;
+    font-weight: bolder;
+    position: relative;
+    padding: 10px 10px;
+    bottom: 18px;
+}
+.menu{
+    position: relative;
+    left: 15px;
+    bottom: 40px;
+}
+.menu li{
+    height: 50px;
+    width: 220px;
+    background: none;
+    margin: 2px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+.menu li:nth-child(1){
+    background: #fff;
+    border-right: 2px solid #0000ff;
+}
+.menu li::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #666;
+    padding: 0 50px;
+    position: relative;
+    top: 15px;
+}
+.menu li i{
+    position: absolute;
+    left: 16px;
+    top: 17px;
+}
+.menu li:hover{
+    background: #fff;
+    border-right: 2px solid #0000ff;
+}
+.head-menu{
+    position: absolute;
+    width: 1116px;
+    height: 10vh;
+    background: none;
+    top: 0;
+    right: 0;
+    border-right: 1px solid #ddd;
+}
+.head-account{
+    position: absolute;
+    right: 220px;
+    top: 15px;
+}
+.header-contain{ 
+    background: #f0f5f9;
+}
+.dashboard {
+    position: relative; 
+    display: flex;
+    margin-top: 10px;
+    left: -10px;
+}
+.cart_item {
+    margin: 8px; 
+    padding: 10px 20px;  
+    background: #fff;
+    border-radius: 10px;
+    width: 210px;
+    height: 110px;
+    position: relative;
+}
+.cart_item button{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    border: 1px solid #d6e5ee;
+    background: #d6e5ee;
+    font-size: 0.9rem;
+    color: #0000ff;
+    top: 12px;
+    right: 25px;
+}
+.cart_item h2 {
+    font-size: 1.56em; 
+    margin: 10px 0 0; 
+    color: #2c3e50;
+    position: relative;
+    margin-top: 6px;
+}
+.cart_item span {
+    color: #888; 
+    font-size: 1.1em;
+}
+.cart_item p{
+    font-size: 0.8rem;
+    position: absolute;
+    left: 20px;
+    bottom: -4px;
+    color: #72abe0;
+}
+.right-menu{ 
+    width: 83%; 
+    position: absolute; 
+    right: 30px; 
+    top: 35px;
+}
+
+h1{
+    font-size: 1.4rem;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 905px;
+    margin: 50px auto;
+    background: #ffffffcc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top: -45px;
+}
+canvas {
+    background: #fdfaff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}

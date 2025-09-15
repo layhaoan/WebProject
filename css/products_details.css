@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    position: relative;
+    background: #585656;
+    overflow-x: hidden;
+}
+main{
+    position: relative;
+    width: 100%;
+}
+main>section{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+}
+main>section:nth-child(1){
+    height: 30vh;
+    border-bottom: 1px solid #4f4f50;
+}
+main>section:nth-child(2){
+    background: #fff;
+}
+main>section:nth-child(3){
+    background: #161616ff;
+}
+main>section:nth-child(4){
+   background: #585656;
+    height: 25vh;
+    position: absolute;
+}
+
+.header{
+    width: 100%;
+    position: relative;
+    padding: 300px 0;
+    background: none;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    background: #6361619d;
+    transform: translate(-50%,-50%);
+    z-index: 11111;
+    left: 50%;
+    top: 3.5%;
+}
+.menu{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    padding-left: 35px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin: 5px;
+    transition: all 0.6s ease-in-out;
+}
+
+.menu li:hover{
+    background: #dbdddf;
+}
+.menu li:hover a{
+    color: #555;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.btn{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: 3%;
+    top: 50%;  
+}
+.btn button{
+    padding: 10px 15px;
+    background: #4f4f50;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.btn button a{
+    text-align: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.container{
+    width: 1600px;
+    height: 800px;
+    background: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+    left: 50%;
+    top: 50%;
+}
+.details {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: #666;
+    right: 0;
+    top: 0;
+}
+img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    margin-bottom: 15px; 
+}
+.Btn_back{
+    padding: 8px 18px;
+    background: #fff;
+    position: absolute;
+    font-size: 1rem;
+    border: none;
+    left: 10px;
+    color: #4f4f50;
+    top: 10px;
+}
+.Btn_back  a{
+    text-decoration: none;
+    color: #4f4f50;
+}
+.Btn_back i{
+    font-size: 1rem;
+    position: relative;
+    color: #4f4f50;
+    left: -10px;
+}
+.headerText{
+    position: absolute;
+    width: 600px;
+    left: 120px;
+    top: 160px;
+}
+.headerText h2{
+    font-size: 3.2rem;
+}
+.headerText p{
+    padding-top: 15px;
+}
+.headerText button{
+    width: 120px;
+    height: 32px;
+    background: #fff;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+    top: 25px;
+}
+.hyperText{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 28%;
+    left: 50%;
+}
+.hyperText h1{
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 58%;
+  left: 50%;
+  width: 96%;
+  height: 25vh;
+  background: none;
+}
+.left-footer{
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  display: block;
+}
+.left-footer h2{
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.left-footer p{
+  inline-size: 480px;
+  margin-top: 10px;
+  color: #fff;
+}
+.right-footer{
+  display: flex;
+  position: absolute;
+  right: -10px;
+  top: 30px;
+}
+.footer-list{
+  width: 140px;
+  height: 160px;
+  background: none;
+  position: relative;
+  margin: 2px;
+}
+.footer-list:nth-child(4){
+  width: 210px;
+}
+.footer-list h2{
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-list p{
+  line-height: 22px;
+  font-size: 0.92rem;
+  position: relative;
+  color: #fff;
+  top: 12px;
+}
+.footer-list a i{
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  top: 12px;
+}
